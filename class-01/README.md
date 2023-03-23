@@ -1,4 +1,8 @@
-In this I have learnt that when you are working with Javascript it allows you to put the value of any type don't restrict you from doing that which causes the major
+
+# Learning-Typescript-from-Sir-Ishaq-Bhojani
+
+
+In this class I have learnt that when you are working with Javascript it allows you to put the value of any type don't restrict you from doing that which causes the major
 
 bugs in the development phase then we have to later debug that bugs but what if you get to know your bugs or mistakes hand in hand. Now here typescript comes in the
 
