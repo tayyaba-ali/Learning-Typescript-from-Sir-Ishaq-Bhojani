@@ -20,7 +20,7 @@ generally we make src folder and put the ts file in it
 
 3.outDir(for js files)
 
-generally we make dist folderand put the js file in it
+generally we make dist folder and put the js file in it
 
 
 After doing all of these
@@ -31,7 +31,7 @@ tsc
 
 it will automatically go in the src folder and will compile the ts file
 
-and you can see it will create the .js.map filr in the dist folder by the source map which is true
+and you can see it will create the .js.map file in the dist folder by the source map which is true
 
 Modify your index.html file directory of .js file
 
