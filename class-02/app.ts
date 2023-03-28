@@ -99,5 +99,3 @@ console.log(operation(9,4,"SUBTRACT"));
 // For this we can use the union operator definning the not only the string but exact these strings which i am definning
 
 
-
-// Classes
