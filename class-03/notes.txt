@@ -1,0 +1,23 @@
+Setup for a  proper project in typescript
+
+By the command 
+
+tsc --init 
+
+i will make the tsconfig.json file conatinning all the configurations
+
+Main configurations
+
+1.target 
+
+we will it that compiles the ts code in es6 js 
+
+2.rootDir(for ts files)
+
+in which direc your ts file is 
+
+generally we make src folder and put the ts file in it
+
+3.outDir(for js files)
+
+generally we make dist folderand put the js file in it
