@@ -1,5 +1,5 @@
 "use strict";
-// Tuples
+// ============Tuples===========
 // Tuples is array of fixed elements already you have idea that how many will be your array elements
 // In normal arrays we first define the type and initialize the array
 // example let numbers:number[]=[]
@@ -11,7 +11,7 @@ let gender = ["Male", "Female"];
 gender.push("Tiktokers"); // didn't complain
 const Admin = [1, "Admin"];
 const error = [404, "Not found"];
-// Class
+// ========Class==============
 // starting with the Capital letter and single
 // class Student{
 //  // here first specify the parameters type
@@ -30,8 +30,8 @@ class Student {
         this.name = name;
         this.rollNo = rollNo;
         this.skills = [];
-        this.name = name;
-        this.rollNo = rollNo;
+        // this.name = name;
+        // this.rollNo=rollNo   by shorthand don't need to write even these
     }
     addSkill(skill) {
         this.skills.push(skill);
@@ -54,11 +54,44 @@ const student1 = new Student("Tayyaba", 123);
 // we can make a function which will push that skill in the skills array but don't have the direct access of the skills length
 student1.addSkill("Javascript");
 // student1.skills  // can't access 🤧
-console.log(student1);
+// console.log(student1);
 //readonly modifier to just read can't modify
 const student2 = new Student("Umra", 234);
 student2.addSkill("HTML");
-console.log(student2);
-console.log(student2.rollNo);
+// console.log(student2);
+// console.log(student2.rollNo)
 // student2.rollNo=890  //read-only
+//========= Inheritance ==============
+// when we want to use any prebuild class and add some new additional properties or methods
+class PositionHolder {
+    constructor(name, rollNo) {
+        this.name = name;
+        this.rollNo = rollNo;
+        this.subjects = [];
+    }
+    addTopSubject(subject) {
+        this.subjects.push(subject);
+    }
+}
+const position1 = new PositionHolder("Tayyaba", 123);
+// console.log(student1.rollNo);
+// console.log(position1);
+class Competitors extends PositionHolder {
+    constructor(name, rollNo) {
+        super(name, rollNo);
+        this.competition = [];
+    }
+    addingSubjects() {
+        super.addTopSubject("cinese");
+    }
+    addCompetitor(competition) {
+        this.competition.push(competition);
+    }
+}
+let PCstudent = new Competitors("Umra", 67);
+console.log(PCstudent.name);
+console.log(PCstudent.rollNo);
+console.log(PCstudent.addCompetitor("runner"));
+console.log(PCstudent.addingSubjects());
+// TODO: Callings methods of the parents in the child class 
 //# sourceMappingURL=app.js.map

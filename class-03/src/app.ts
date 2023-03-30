@@ -1,6 +1,6 @@
 
 
-// Tuples
+// ============Tuples===========
 
 // Tuples is array of fixed elements already you have idea that how many will be your array elements
 
@@ -24,7 +24,7 @@ const error:[number,string]=[404,"Not found"]
 
 
 
-// Class
+// ========Class==============
 
 // starting with the Capital letter and single
 
@@ -49,9 +49,12 @@ class Student{
 
     private skills:string[]=[]
     constructor(public name: string,  readonly rollNo: number) {
-        this.name = name;
-        this.rollNo=rollNo
+        // this.name = name;
+        // this.rollNo=rollNo   by shorthand don't need to write even these
     }
+
+
+
     addSkill(skill: string) {
         this.skills.push(skill)
     }
@@ -93,15 +96,67 @@ student1.addSkill("Javascript")
 // student1.skills  // can't access 🤧
 
 
-console.log(student1);
+// console.log(student1);
 
 
 //readonly modifier to just read can't modify
 
 const student2 = new Student("Umra", 234)
 student2.addSkill("HTML")
-console.log(student2);
-console.log(student2.rollNo)
+// console.log(student2);
+// console.log(student2.rollNo)
 // student2.rollNo=890  //read-only
+
+
+
+//========= Inheritance ==============
+
+// when we want to use any prebuild class and add some new additional properties or methods
+
+
+class PositionHolder{
+
+    private subjects: string[] = [];
+    
+    constructor(public name: string, public readonly rollNo: number) {
+        
+    }
+    addTopSubject(subject: string) {
+        
+        this.subjects.push(subject);
+    }
+}
+
+const position1 = new PositionHolder("Tayyaba", 123
+)
+// console.log(student1.rollNo);
+
+// console.log(position1);
+
+
+class Competitors extends PositionHolder {
+	private competition: string[] = [];
+	constructor(name: string, rollNo: number) {
+		super(name, rollNo);
+	}
+	addingSubjects() {
+		super.addTopSubject("cinese");
+
+	}
+	addCompetitor(competition: string) {
+		this.competition.push(competition);
+	}
+}
+
+let PCstudent = new Competitors("Umra", 67)
+
+console.log(PCstudent.name);
+console.log(PCstudent.rollNo);
+console.log(PCstudent.addCompetitor("runner"));
+
+console.log(PCstudent.addingSubjects());
+
+
+// TODO: Callings methods of the parents in the child class 
 
 
