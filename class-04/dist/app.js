@@ -26,7 +26,7 @@ class Product {
         this._price = _price;
     }
     get name() {
-        return this._name; // getters will always return 
+        return this._name; // getters will always return
     }
     get id() {
         return this._id;
@@ -59,12 +59,26 @@ class clothingProducts extends Product {
         this._size = _size;
     }
     getDiscount() {
-        return this.price * .9;
+        return this.price * 0.9;
     }
 }
-const tShirt = new clothingProducts(3, 2300, "t-shirt", "black", "XL");
+const tShirt = new clothingProducts(3, 2300, 't-shirt', 'black', 'XL');
 console.log(tShirt);
 console.log(tShirt.getDiscount());
 // abstract class those methods in the base/parent class you want to also in the child class or those who are extending the base class
 // use the keyword abstract before the base class
+// Singletons
+// class should have only 1 object
+class myNumber {
+    constructor() {
+    }
+    static getInstance(no) {
+        if (!this.instance) {
+            this.instance = new myNumber();
+        }
+        return this.instance;
+    }
+}
+const number1 = myNumber.getInstance(4);
+console.log(number1);
 //# sourceMappingURL=app.js.map
