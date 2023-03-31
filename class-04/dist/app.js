@@ -51,4 +51,14 @@ console.log(product1.price);
 // for these we have setters
 product1.name = "Sugar";
 console.log(product1.name);
+// Revision Inheritance
+class clothingProducts extends Product {
+    constructor(id, price, name, _color, _size) {
+        super(id, name, price);
+        this._color = _color;
+        this._size = _size;
+    }
+}
+const tShirt = new clothingProducts(3, 2300, "t-shirt", "black", "XL");
+console.log(tShirt);
 //# sourceMappingURL=app.js.map

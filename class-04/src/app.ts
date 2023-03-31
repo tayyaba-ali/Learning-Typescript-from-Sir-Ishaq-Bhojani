@@ -60,3 +60,15 @@ console.log(product1.price);
 
 product1.name="Sugar"
 console.log(product1.name);
+
+
+// Revision Inheritance
+
+class clothingProducts extends Product {
+	constructor(id: number, price: number, name: string, private _color: string, private _size: "L"|"M"|"S"|"XL") {
+		super(id, name, price);
+	}
+}
+
+const tShirt = new clothingProducts(3, 2300, "t-shirt", "black", "XL")
+console.log(tShirt);
