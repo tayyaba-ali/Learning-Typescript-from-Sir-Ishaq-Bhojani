@@ -23,7 +23,7 @@
 // Now how can we make getters
 // just insert _before your private properties
 
-class Product {
+abstract class Product {
 	constructor(private _id: number, private _name: string, private _price: number) {}
 
 	get name() {
@@ -45,21 +45,22 @@ class Product {
         }
         this._name = newName;
     }
+    abstract getDiscount():number
 }
 
-const product1 = new Product(1, 'Milk', 4500);
+// const product1 = new Product(1, 'Milk', 4500);
 
 //Benefit you have you call like product1.function()  simply you can call these as properties
 
-console.log(product1.name);
-console.log(product1.id);
-console.log(product1.price);
+// console.log(product1.name);
+// console.log(product1.id);
+// console.log(product1.price);
 // product1.price= // private
 
 // for these we have setters
 
-product1.name="Sugar"
-console.log(product1.name);
+// product1.name="Sugar"
+// console.log(product1.name);
 
 
 // Revision Inheritance
@@ -67,8 +68,17 @@ console.log(product1.name);
 class clothingProducts extends Product {
 	constructor(id: number, price: number, name: string, private _color: string, private _size: "L"|"M"|"S"|"XL") {
 		super(id, name, price);
-	}
+    }
+    getDiscount(): number {
+        return this.price*.9
+    }
 }
 
 const tShirt = new clothingProducts(3, 2300, "t-shirt", "black", "XL")
 console.log(tShirt);
+console.log(tShirt.getDiscount());
+
+
+// abstract class those methods in the base/parent class you want to also in the child class or those who are extending the base class
+
+// use the keyword abstract before the base class
