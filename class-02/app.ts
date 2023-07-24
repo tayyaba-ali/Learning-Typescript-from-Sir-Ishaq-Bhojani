@@ -99,3 +99,9 @@ console.log(operation(9,4,"SUBTRACT"));
 // For this we can use the union operator definning the not only the string but exact these strings which i am definning
 
 
+// Tuples
+// Tuples are used when you want to restrict the length of the array
+
+const roles = [0, "Admin"];
+roles.push("hello")
+console.log(roles.length);

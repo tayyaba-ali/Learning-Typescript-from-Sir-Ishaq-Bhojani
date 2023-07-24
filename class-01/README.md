@@ -2,9 +2,9 @@
 # Learning-Typescript-from-Sir-Ishaq-Bhojani
 
 
-In this class I have learnt that when you are working with Javascript it allows you to put the value of any type don't restrict you from doing that which causes the major
+In this class I have learnt that when you are working with Javascript it allows you to put the value of any type don't restrict you from doing that will causes the major
 
-bugs in the development phase then we have to later debug that bugs but what if you get to know your bugs or mistakes hand in hand. Now here typescript comes in the
+bugs in the development phase then we have to later debug that bugs but what if you get to know your bugs can be solved   hand in hand. Now here typescript comes in the
 
 picture, it is the superset of javascript the deficiencies remained in javascript it is built to resolve these. Although javascript is a scripting language so we
 
@@ -12,7 +12,7 @@ need to use the Typescript with the javascript which mainly trackle with the typ
 
 converted in the javascript because our browser understands javascript not the typescript. So we work on the typescript the then typescript convert our typescript
 
-into javascript whivh then executed by the browser. It is much important as the freelancers expect the javasctipt developer to be have expertise on javascript.
+into javascript which then executed by the browser. It is much important as the freelancers expect the javasctipt developer to be have expertise on javascript.
 
 It is also involving in the upcoming Web 3.0
 
