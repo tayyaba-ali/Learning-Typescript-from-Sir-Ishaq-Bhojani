@@ -102,6 +102,26 @@ console.log(operation(9,4,"SUBTRACT"));
 // Tuples
 // Tuples are used when you want to restrict the length of the array
 
-const roles = [0, "Admin"];
-roles.push("hello")
-console.log(roles.length);
+// const roles = [0, "Admin"];
+// roles.push("hello")
+// console.log(roles.length);
+
+
+// let myFunc :(num1:number,num2:number) => number;
+
+// function addition(num1: number, num2: number):number {
+//     return num1+num2
+// }
+// myFunc=addition
+
+
+let myFunc: (num1: number, num2:number)=>number
+
+
+function addition(num1: number, num2: number) {
+    return num1+num2
+}
+
+myFunc = addition;
+
+console.log(addition(8, 9));
