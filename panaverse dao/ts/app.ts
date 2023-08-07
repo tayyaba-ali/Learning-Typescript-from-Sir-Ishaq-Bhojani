@@ -43,9 +43,19 @@ const monthTwoPayments = payStubs[1][2] + payStubs[2][2];
 
 function logAndReturn<T>(value:T):T{
 	return value;
+// }
+// const numResult = logAndReturn<number>(42);
+// const numResult2 = logAndReturn<string>("hello");
+// const numResult3 = logAndReturn<boolean>(true);
+// console.log(numResult);
+// console.log(numResult2);
+// console.log(numResult3);
+
+// function logAndReturn<T>(value: T): T {
+// 	return value;
 }
 const numResult = logAndReturn<number>(42);
-const numResult2 = logAndReturn<string>("hello");
+const numResult2 = logAndReturn<string>('hello');
 const numResult3 = logAndReturn<boolean>(true);
 console.log(numResult);
 console.log(numResult2);
